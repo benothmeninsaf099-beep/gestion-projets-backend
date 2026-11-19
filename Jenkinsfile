@@ -1,4 +1,4 @@
-ppipeline {
+pipeline {
     agent any
 
     stages {
@@ -10,6 +10,7 @@ ppipeline {
         stage('Compile') {
             steps {
                 sh 'mvn compile'
-                }
+            }
+        }
     }
-
+}
